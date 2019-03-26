@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .color1{
+         background-color: lightblue;   
+        }
+        .color2{
+         background-color: lightcoral;   
+        }
+        .color3{
+         background-color: lightgreen;   
+        }
+        .color4{
+         background-color: lightsalmon;   
+        }.color5{
+         background-color: lightslategrey;   
+        }
+
+        #blockElement{
+            margin-bottom: 100px;
+        }
+        #blockElement div{
+            /*it occupy full width(100% width) of screen even your resize it.
+             even after resize width remaining portion will always reserve for this element*/
+            display: block;
+            width: 50%;
+        }
+        #inlineElement{
+            margin-bottom: 100px;
+        }
+        #inlineElement div{
+            /*it default "auto X auto" only occupy content width and height and not allow to change width and height*/
+            display: inline;
+            width: 20%;  
+        }
+        #inlineBlc{
+            margin-bottom: 100px;
+        }
+        #inlineBlc div{
+            /*it default occupy content width and height and also allow to change width and height */
+            display: inline-block;
+            width: 10%;  
+        }
+
+    </style>
+</head>
+<body>
+
+     <h2>Block Elements</h2>
+     <hr>   
+    <div id="blockElement">
+        <div class="block1 color1">block1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eaque similique suscipit voluptatem pariatur dolorum nihil sapiente nemo, modi labore dolores numquam blanditiis, aut ullam ipsa fuga officia possimus. Vel!</div>
+        <div class="block2 color2">block2</div>
+        <div class="block3 color3">block3</div>
+        <div class="block4 color4">block4</div>
+        <div class="block5 color5">block5</div>
+    </div>
+    
+    <h2>Inline Elements</h2>
+    <hr>
+    <div id="inlineElement">
+        <div class="inlineE1 color1">inline1</div>
+        <div class="inlineE2 color2">inline2</div>
+        <div class="inlineE3 color3">inline3</div>
+        <div class="inlineE4 color4">inline4</div>
+        <div class="inlineE5 color5">inline5</div>
+    </div>
+
+    <h2>Inline-Block Elements</h2>
+    <hr>
+    <div id="inlineBlc">
+        <div class="ib1 color1">ib1</div>
+        <div class="ib2 color2">ib2</div>
+        <div class="ib3 color3">ib2</div>
+        <div class="ib4 color4">ib4</div>
+        <div class="ib5 color5">ib5</div>
+        <div class="ib5 color5">ib5</div>
+        <div class="ib5 color5">ib5</div>
+        <div class="ib5 color5">ib5</div>
+        <div class="ib5 color5">ib5</div>
+        <div class="ib5 color5">ib5</div>
+    </div>
+    
+</body>
+</html>
